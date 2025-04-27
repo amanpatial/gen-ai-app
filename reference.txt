@@ -1,0 +1,3 @@
+1. Google’s Agent Development Kit (ADK) https://google.github.io/adk-docs/
+2. Google ADK Samples - https://github.com/google/adk-samples
+2. Model Context Protocol https://www.anthropic.com/news/model-context-protocol
