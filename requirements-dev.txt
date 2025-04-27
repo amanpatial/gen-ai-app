@@ -1,0 +1,8 @@
+# Python dependencies: all developer-only tools for quality, testing, and formatting.
+
+#-r requirements.txt  # Include all runtime requirements too
+#pytest>=7.0
+#black>=24.0
+#flake8>=6.0
+#mypy
+#pre-commit

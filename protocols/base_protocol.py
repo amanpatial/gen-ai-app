@@ -1,0 +1,1 @@
+# Communication protocols (MCP, A2A, Custom)

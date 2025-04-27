@@ -1,0 +1,1 @@
+# CLI scripts for easy interaction (run agent, evaluate, benchmark)
