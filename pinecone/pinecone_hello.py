@@ -1,13 +1,18 @@
+import os
 from pinecone import Pinecone, ServerlessSpec
+from dotenv import load_dotenv
 
-# 1. Set your API key
-api_key = "XXXXX"
+# This loads variables from .env into os.environ
+load_dotenv()
+
+# Set your API key. Now available globally in your app
+pine_cone_api_key = os.environ["PINE_CONE_API_KEY"]
 
 # 2. Create Pinecone client
-pc = Pinecone(api_key=api_key)
+pc = Pinecone(api_key=pine_cone_api_key)
 
 # 3. Name an index
-index_name = "aman-hello-advance-index"
+index_name = "aman-hello-advance-index-1"
 
 # 3. Create an index
 if index_name not in [index.name for index in pc.list_indexes()]:

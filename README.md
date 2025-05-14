@@ -13,6 +13,10 @@
 # pip install google-adk  
 # pip show google-adk
 
+
+# pip3 show langchain
+# pip3 list | grep langchain
+
 # adk run multi_tool_agent
 
 # You install it via:
