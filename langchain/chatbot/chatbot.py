@@ -13,15 +13,21 @@ load_dotenv()
 # Now available globally in your app
 openai_api_key = os.environ["OPENAI_API_KEY"]
 
-# Load PDF
-loader = PyPDFLoader("data/holidays.pdf")
-documents = loader.load()
+# 1. Load multiple PDF files
+pdf_folder = "data/sales"
+pdf_files = [os.path.join(pdf_folder, file) for file in os.listdir(pdf_folder) if file.endswith(".pdf")]
 
-# Split content
+all_documents = []
+for file in pdf_files:
+    loader = PyPDFLoader(file)
+    documents = loader.load()
+    all_documents.extend(documents)
+
+# 2. Split content
 splitter = RecursiveCharacterTextSplitter(chunk_size=1000, chunk_overlap=200)
-docs = splitter.split_documents(documents)
+docs = splitter.split_documents(all_documents)
 
-# Create embeddings & vectorstore
+# 3. Create embeddings & vectorstore
 embeddings = OpenAIEmbeddings()
 vectorstore = FAISS.from_documents(docs, embeddings)
 
