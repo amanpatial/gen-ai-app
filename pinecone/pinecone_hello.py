@@ -42,20 +42,24 @@ data = [
     {"id": "vec6", "text": "Apple Computer Company was founded on April 1, 1976, by Steve Jobs, Steve Wozniak, and Ronald Wayne as a partnership."}
 ]
 
+#Converts the text into vector embeddings using Pinecone's embedding service
 embeddings = pc.inference.embed(
     model="multilingual-e5-large",
     inputs=[d['text'] for d in data],
     parameters={"input_type": "passage", "truncate": "END"}
 )
+
+#Print vector embeddings
 print(embeddings[0])
 
-# Upsert data
+# Storing Vectors (Upsert)
 # Wait for the index to be ready
 while not pc.describe_index(index_name).status['ready']:
     time.sleep(1)
 
 index = pc.Index(index_name)
 
+#Prepares the data for storage by combining IDs, vector values, and metadata
 vectors = []
 for d, e in zip(data, embeddings):
     vectors.append({
@@ -64,6 +68,7 @@ for d, e in zip(data, embeddings):
         "metadata": {'text': d['text']}
     })
 
+#uploads (upserts) vectors to the index in namespace
 index.upsert(
     vectors=vectors,
     namespace="ns1"
@@ -75,6 +80,7 @@ print(index.describe_index_stats())
 #Create a query vector
 query = "Tell me about the fruit known as Apple."
 
+#Querying and Similarity Search
 embedding = pc.inference.embed(
     model="multilingual-e5-large",
     inputs=[query],
@@ -84,6 +90,7 @@ embedding = pc.inference.embed(
 )
 
 #Run a similarity search
+#Takes a user query and converts it to a vector embedding using the same model.
 results = index.query(
     namespace="ns1",
     vector=embedding[0].values,
@@ -92,5 +99,6 @@ results = index.query(
     include_metadata=True
 )
 
-#Return three vectors that are most similar to the query vector
+#Return three(3) vectors that are most similar to the query vector using cosine similarity.
+#The results will likely return vectors about the fruit rather than the tech company, demonstrating semantic understanding.
 print(results)
