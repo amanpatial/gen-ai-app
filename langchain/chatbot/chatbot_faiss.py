@@ -12,7 +12,7 @@ from langchain.chains import RetrievalQA
 from langchain_community.vectorstores import FAISS
 from langchain_openai import OpenAIEmbeddings
 from dotenv import load_dotenv
-from document_loader import DocumentLoader
+from document_loader_faiss import DocumentLoader
 
 # Load environment variables
 load_dotenv()
@@ -287,14 +287,14 @@ def main():
             # Option 2: Create new vectorstore
             print("📁 No existing vectorstore found. Creating new one...")
             loader = DocumentLoader()
-            pdf_folder = "data/sales"  # Change this to your PDF folder
+            pdf_folder = "data/hr"  # Change this to your PDF folder
             
             if os.path.exists(pdf_folder):
                 vectorstore = loader.process_folder(pdf_folder, save_path=vectorstore_path)
                 chat.set_vectorstore(vectorstore)
             else:
                 print(f"❌ PDF folder not found: {pdf_folder}")
-                print("💡 Please ensure your PDF files are in the 'data/sales' folder")
+                print("💡 Please ensure your PDF files are in the 'data/hr' folder")
                 return
         
         # Show vectorstore info
