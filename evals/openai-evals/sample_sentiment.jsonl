@@ -1,0 +1,20 @@
+{ "text": "I absolutely love this phone, the battery lasts all day!", "correct_label": "Positive" }
+{ "text": "The food was cold and tasted awful.", "correct_label": "Negative" }
+{ "text": "Package arrived on time, nothing special to say.", "correct_label": "Neutral" }
+{ "text": "Customer service went above and beyond to fix my issue.", "correct_label": "Positive" }
+{ "text": "The app keeps crashing every time I open it.", "correct_label": "Negative" }
+{ "text": "Movie was okay, some parts were fun but others dragged.", "correct_label": "Neutral" }
+{ "text": "This laptop is lightning fast and super lightweight.", "correct_label": "Positive" }
+{ "text": "Worst concert experience ever, the sound system was broken.", "correct_label": "Negative" }
+{ "text": "The tutorial was fine, I learned a bit but not much.", "correct_label": "Neutral" }
+{ "text": "Fantastic hotel stay, the staff were incredibly friendly.", "correct_label": "Positive" }
+{ "text": "Traffic was horrible this morning, I’m still annoyed.", "correct_label": "Negative" }
+{ "text": "The new update is alright, I don’t notice many changes.", "correct_label": "Neutral" }
+{ "text": "Such a beautiful painting, it really inspires me.", "correct_label": "Positive" }
+{ "text": "Terrible idea, this project is going to fail.", "correct_label": "Negative" }
+{ "text": "The presentation was average, nothing memorable.", "correct_label": "Neutral" }
+{ "text": "Best purchase I’ve made this year!", "correct_label": "Positive" }
+{ "text": "I hate how slow this website is.", "correct_label": "Negative" }
+{ "text": "The class was neither good nor bad, just standard.", "correct_label": "Neutral" }
+{ "text": "Really enjoyed the concert, the band was amazing!", "correct_label": "Positive" }
+{ "text": "The packaging was damaged and the product was unusable.", "correct_label": "Negative" }
