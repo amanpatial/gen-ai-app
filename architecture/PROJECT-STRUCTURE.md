@@ -1,4 +1,7 @@
-gen_ai_project/
+## 📁 Project Structure
+
+```
+generative_ai_project/
 ├── config/                  # Configuration directory
 │   ├── __init__.py
 │   ├── model_config.yaml    # Model-specific configurations
@@ -41,3 +44,4 @@ gen_ai_project/
     ├── prompt_testing.ipynb
     ├── response_analysis.ipynb
     └── model_experimentation.ipynb
+```
