@@ -4,7 +4,7 @@
 
 Generative AI and Large Language Models (LLMs) are transforming the way machines understand, create and interact with human language, images and ideas. From powering conversational agents to automating creative and analytical tasks, these technologies represent the cutting edge of modern AI.
 
-## Q1. What is Generative AI and how does its architecture work?
+### Q1. What is Generative AI and how does its architecture work?
 
 **A:**
 Generative AI (Gen AI) refers to a category of artificial intelligence models that can create new data such as text, images, audio or code, instead of just analyzing existing data. These models learn patterns and structures from large datasets and then use this knowledge to generate outputs that resemble human-created content.
@@ -22,7 +22,7 @@ Training Data – Large-scale, diverse datasets are used to learn patterns and 
 
 ---
 
-## Q2. What is the difference between Traditional AI and Generative AI?
+### Q2. What is the difference between Traditional AI and Generative AI?
 
 **A:**
 
@@ -55,7 +55,7 @@ Conversational, open-ended and creative.
 
 ---
 
-## Q3. How does Generative AI differ from Agentic AI?
+### Q3. How does Generative AI differ from Agentic AI?
 
 **A:**
 Aspect
@@ -88,7 +88,7 @@ Low – can self-direct and manage workflows.
 
 ---
 
-## Q4. What is the Encoder-Decoder Model in AI?
+### Q4. What is the Encoder-Decoder Model in AI?
 
 **A:**
 The Encoder-Decoder model is a common architecture used in sequence-to-sequence tasks such as machine translation, text summarization and image captioning. It consists of two main parts — the Encoder which processes the input and the Decoder which generates the output.
@@ -107,7 +107,7 @@ Decoder outputs: “J’aime les pommes” (in French).
 
 ---
 
-## Q5. What are Autoencoders and how do they work?
+### Q5. What are Autoencoders and how do they work?
 
 **A:**
 Autoencoders are a type of neural network designed to learn efficient representations of input data by compressing it into a lower-dimensional latent space and then reconstructing it back to its original form. The main goal is to capture the most important features of the data while minimizing information loss. They are widely used for dimensionality reduction, feature extraction, denoising and as a building block in generative models like Variational Autoencoders (VAEs).
@@ -125,7 +125,7 @@ Repeat the process until the reconstruction error is minimized.
 
 ---
 
-## Q6. What is a Variational Autoencoder (VAE)? How does it differ from a standard autoencoder?
+### Q6. What is a Variational Autoencoder (VAE)? How does it differ from a standard autoencoder?
 
 **A:**
 A Variational Autoencoder (VAE) is a type of autoencoder that encodes input data into a probabilistic latent space instead of a fixed point, allowing it to generate new data by sampling from this latent distribution. VAEs combine neural networks with probabilistic modeling, making them suitable for generative tasks like creating images, text or other complex data.
@@ -153,7 +153,7 @@ Image/text generation, anomaly detection, creative AI tasks.
 
 ---
 
-## Q7. Explain GANs (Generative Adversarial Networks) and how the generator and discriminator interact.
+### Q7. Explain GANs (Generative Adversarial Networks) and how the generator and discriminator interact.
 
 **A:**
 Generative Adversarial Networks (GANs) are a type of neural network architecture used for generative tasks. They consist of two networks—the generator and the discriminator—that compete in a game-like setting. The generator creates fake data and the discriminator evaluates whether the data is real or fake, improving both networks over time.
@@ -171,7 +171,7 @@ This adversarial training creates a feedback loop where the generator and discri
 
 ---
 
-## Q8. What are Diffusion Models and how do they generate data?
+### Q8. What are Diffusion Models and how do they generate data?
 
 **A:**
 Diffusion Models are generative models that learn to create data by reversing a gradual noising process. During training, they learn how data becomes corrupted by noise step by step. During generation, they start with random noise and progressively remove it, reconstructing structured data that resembles the original dataset. These models are especially effective for producing high-quality, detailed and diverse outputs.
@@ -183,7 +183,7 @@ After repeating this process multiple times, the noise is transformed into reali
 
 ---
 
-## Q9. Compare GANs and Diffusion Models.
+### Q9. Compare GANs and Diffusion Models.
 
 **A:**
 Aspect
@@ -210,7 +210,7 @@ Image generation, audio/video synthesis, high-fidelity generative tasks.
 
 ---
 
-## Q10. What are Transformers and what is attention mechanism?
+### Q10. What are Transformers and what is attention mechanism?
 
 **A:**
 Transformers are a type of neural network architecture designed to handle sequential data such as text, without relying on recurrent processing. They use attention mechanisms to model relationships between all elements in a sequence simultaneously, allowing the network to capture context and dependencies more effectively than RNNs or LSTMs.
@@ -228,7 +228,10 @@ Value (V): Represents the actual information to use in output.
 
 ---
 
-## Q11. What is Self-Attention and how does it differ from Cross-Attention?
+### Q11. What is Self-Attention and how does it differ from Cross-Attention?
+
+
+**A:**
 
 **A:** Self-Attention is an attention mechanism where a sequence attends to itself, meaning each element of the sequence considers all other elements in the same sequence to compute a weighted representation. It helps capture dependencies between words or tokens within the same input.
 
@@ -254,7 +257,10 @@ Align and integrate information between two sequences.
 
 ---
 
-## Q12. What is the role of Positional Encoding in Transformers?
+### Q12. What is the role of Positional Encoding in Transformers?
+
+**A:**
+
 Positional Encoding is a technique used in transformers to provide information about the position of tokens in a sequence. Since transformers process all tokens in parallel and do not inherently understand order, positional encoding allows the model to capture sequence structure and relative positions of elements.
 Role of Positional Encoding:
 Adds a unique vector to each token embedding to represent its position in the sequence.
@@ -264,7 +270,10 @@ Common methods include sinusoidal encoding or learnable positional embeddings.
 
 ---
 
-## Q13. Explain the concept of Context Window in LLMs.
+### Q13. Explain the concept of Context Window in LLMs.
+
+**A:**
+
 The Context Window in Large Language Models (LLMs) is the maximum span of text (in tokens) that the model can process and consider at once when generating or interpreting language. It determines how much previous information the model can “remember” to make predictions, maintain coherence and understand relationships between words, sentences or paragraphs. 
 
 A larger context window enables the model to handle longer documents, maintain consistency across multiple interactions and capture dependencies that occur over extended text.
@@ -274,7 +283,10 @@ A larger context window allows for better understanding of long passages and imp
 
 ---
 
-## Q14. What is Memory in LLMs and how is it implemented in agentic systems?
+### Q14. What is Memory in LLMs and how is it implemented in agentic systems?
+
+**A:**
+
 Memory in LLMs refers to the ability of a model or agent to retain information from past interactions or context beyond the current input. It allows the system to recall previous conversations, decisions or facts, enabling more coherent, context-aware and personalized responses.
 Implementation in Agentic Systems:
 1. Short-Term Memory: Uses the context window of the LLM to remember recent inputs within a single session.
@@ -290,7 +302,10 @@ Hybrid approaches combining LLM reasoning with external memory storage.
 
 ---
 
-## Q15. What is Tokenization and why is it important for LLMs?
+### Q15. What is Tokenization and why is it important for LLMs?
+
+**A:**
+
 Tokenization is the process of dividing text into smaller, meaningful units called tokens which can be words, subwords or characters, depending on the model’s design. In Large Language Models (LLMs), tokenization is a critical preprocessing step that converts raw text into numerical representations the model can process. 
 
 Each token is mapped to an embedding vector, allowing the model to learn semantic relationships, syntax and context. Proper tokenization ensures that the model can understand language efficiently, handle rare or unseen words and maintain performance across different languages and domains.
@@ -305,7 +320,10 @@ Affects model efficiency, since smaller token sequences reduce computation while
 
 ---
 
-## Q16. What are Embeddings and how do they capture semantic meaning?
+### Q16. What are Embeddings and how do they capture semantic meaning?
+
+**A:**
+
 Embeddings are dense numerical vectors that represent words, tokens or other data in a continuous vector space. In LLMs, embeddings capture the semantic meaning of text by placing similar words or phrases close together in this vector space, allowing the model to understand relationships, context and nuances in language.
 
 Capturing Semantic Meaning:
@@ -316,7 +334,10 @@ Embeddings can capture syntactic, semantic and contextual relationships, e.g., �
 
 ---
 
-## Q17. Compare different types of Embedding Databases.
+### Q17. Compare different types of Embedding Databases.
+
+**A:**
+
 Embedding Database
 Definition / Description
 Key Features
@@ -348,7 +369,10 @@ Classic search engines, keyword-based retrieval, simple document ranking.
 
 ---
 
-## Q18. What are the use cases of Vector Databases in RAG pipelines?
+### Q18. What are the use cases of Vector Databases in RAG pipelines?
+
+**A:**
+
 Vector Databases are specialized databases designed to store and search high-dimensional vector representations (embeddings) efficiently. In Retrieval-Augmented Generation (RAG) pipelines, they enable fast and accurate retrieval of relevant information from large datasets which the LLM can then use to generate context-aware responses.
 
 Use Cases in RAG Pipelines:
@@ -361,7 +385,10 @@ Similarity-Based Recommendations: Suggest related content, products or informat
 
 ---
 
-## Q19. What is the difference between Fine-tuning and Transfer Learning?
+### Q19. What is the difference between Fine-tuning and Transfer Learning?
+
+**A:**
+
 Aspect
 Fine-Tuning
 Transfer Learning
@@ -386,7 +413,10 @@ Using ImageNet pre-trained CNNs for medical image classification, BERT for diffe
 
 ---
 
-## Q20. Explain LoRA (Low-Rank Adaptation) and how it helps in fine-tuning.
+### Q20. Explain LoRA (Low-Rank Adaptation) and how it helps in fine-tuning.
+
+**A:**
+
 LoRA (Low-Rank Adaptation) is a fine-tuning technique for large pre-trained models that adds small, trainable low-rank matrices to certain layers of the model instead of updating all model parameters. This allows adaptation to a new task while keeping the majority of the original model weights frozen, reducing computational cost and memory usage.
 
 How It Helps in Fine-Tuning:
@@ -397,7 +427,10 @@ Modularity: Multiple LoRA modules can be added for different tasks without alte
 
 ---
 
-## Q21. What is QLoRA and how is it different from LoRA?
+### Q21. What is QLoRA and how is it different from LoRA?
+
+**A:**
+
 QLoRA (Quantized Low-Rank Adaptation) is an advanced fine-tuning technique that combines LoRA with quantization to further reduce memory and computational requirements when adapting large language models. It allows fine-tuning of extremely large models on modest hardware by using 8-bit or 4-bit quantized weights.
 
 Aspect
@@ -424,7 +457,10 @@ Fine-tuning very large LLMs (tens of billions of parameters) on limited hardware
 
 ---
 
-## Q22. What is PEFT (Parameter-Efficient Fine-Tuning)?
+### Q22. What is PEFT (Parameter-Efficient Fine-Tuning)?
+
+**A:**
+
 PEFT (Parameter-Efficient Fine-Tuning) refers to a set of techniques that allow adapting large pre-trained models to new tasks by training only a small subset of parameters instead of updating the entire model. The goal is to achieve high performance on downstream tasks while significantly reducing computational cost, memory usage and storage requirements.
 Reduces GPU memory usage and training time compared to full fine-tuning.
 Enables fast experimentation with multiple tasks without duplicating the entire model.
@@ -433,7 +469,10 @@ Widely used in LLMs, multimodal models and RAG pipelines for domain adaptation a
 
 ---
 
-## Q23. Explain RLHF (Reinforcement Learning from Human Feedback).
+### Q23. Explain RLHF (Reinforcement Learning from Human Feedback).
+
+**A:**
+
 RLHF (Reinforcement Learning from Human Feedback) is a technique used to fine-tune large language models by using human feedback to guide the model toward producing more useful, safe and aligned outputs. Instead of relying solely on supervised data, RLHF uses human judgments to shape the model’s behavior through reinforcement learning.
 
 Working:
@@ -445,7 +484,10 @@ Step 5: Iteration – Repeat the process to gradually improve alignment with hu
 
 ---
 
-## Q24. What is LLM Distillation and why is it used?
+### Q24. What is LLM Distillation and why is it used?
+
+**A:**
+
 LLM Distillation is the process of compressing a large pre-trained language model (teacher) into a smaller model (student) while retaining most of its performance. The goal is to create a lighter, faster and more efficient model that can run on limited hardware without significant loss in accuracy or capabilities.
 Uses:
 Resource Efficiency: Smaller models require less memory, storage and compute for training and inference.
@@ -456,7 +498,10 @@ Maintains Performance: Retains most of the knowledge and capabilities of the la
 
 ---
 
-## Q25. What is Constitutional AI and how does it differ from RLHF?
+### Q25. What is Constitutional AI and how does it differ from RLHF?
+
+**A:**
+
 Constitutional AI is a technique for aligning language models by using a set of predefined principles or rules (a “constitution”) to guide the model’s behavior, rather than relying directly on human feedback. The model evaluates and revises its outputs based on these principles to ensure responses are safe, ethical and consistent.
 
 Aspect
@@ -483,9 +528,11 @@ General-purpose alignment for chatbots and instruction-following models like Cha
 
 ---
 
-## Q26. What is Hugging Face and what are its main use cases?
-Hugging Face is an AI company and open-source platform that provides tools, libraries and models for natural language processing (NLP) and machine learning. It hosts a large repository of pre-trained models, datasets and frameworks that make it easier to train, deploy and use machine learning models, especially transformers and LLMs
-.
+### Q26. What is Hugging Face and what are its main use cases?
+
+**A:**
+
+Hugging Face is an AI company and open-source platform that provides tools, libraries and models for natural language processing (NLP) and machine learning. It hosts a large repository of pre-trained models, datasets and frameworks that make it easier to train, deploy and use machine learning models, especially transformers and LLMs.
 Use Cases:
 Access to Pre-trained Models: Provides thousands of models for NLP, computer vision, speech and multimodal tasks.
 Fine-Tuning and Training: Tools like Transformers and Trainer API allow users to fine-tune models on custom datasets.
@@ -494,9 +541,13 @@ Dataset Management: Offers ready-to-use datasets and tools for dataset processi
 Model Sharing and Collaboration: Users can upload and share models in the Hugging Face Hub.
 Research and Experimentation: Facilitates state-of-the-art experimentation in NLP, LLMs and multimodal AI.
 Integration with RAG and Embedding Pipelines: Enables seamless use of embeddings and retrieval for applications like chatbots and question-answering systems.
+
 ---
 
-## Q27. What is the Model Hub, Model Card and Dataset Hub on Hugging Face?
+### Q27. What is the Model Hub, Model Card and Dataset Hub on Hugging Face?
+
+**A:**
+
 Hugging Face provides a platform for sharing and discovering models and datasets. Three key components are Model Hub, Model Card and Dataset Hub.
 
 1. Model Hub:
@@ -516,7 +567,10 @@ Includes metadata about size, format, licensing and domain.
 
 ---
 
-## Q28. Compare Pipeline, Extraction and Inference API on Hugging Face.
+### Q28. Compare Pipeline, Extraction and Inference API on Hugging Face.
+
+**A:**
+
 Aspect
 Pipeline API
 Extraction API
@@ -544,7 +598,10 @@ Low-level; full control over inputs, outputs and model behavior.
 
 ---
 
-## Q29. What are Spaces in Hugging Face and what are their applications?
+### Q29. What are Spaces in Hugging Face and what are their applications?
+
+**A:**
+
 Spaces in Hugging Face are a platform for hosting and sharing machine learning demos and web applications. They allow developers and researchers to deploy interactive applications using models, datasets and pipelines directly on the Hugging Face Hub.
 Applications:
 Model Demonstrations: Showcase how a model works in an interactive web interface.
@@ -556,7 +613,10 @@ Experimentation: Test different inputs, tasks or models in real-time and compar
 
 ---
 
-## Q30. What is LangChain and what problem does it solve?
+### Q30. What is LangChain and what problem does it solve?
+
+**A:**
+
 LangChain is an open-source framework designed to build applications using large language models (LLMs) by enabling them to interact with external data, tools and APIs. It provides a structured way to connect LLMs with various components like prompts, memory, agents and chains to create complex, real-world AI applications.
 
 Problem It Solves: LLMs are powerful at generating text but cannot inherently access external knowledge, perform multi-step reasoning or interact with APIs.
@@ -569,7 +629,10 @@ Memory management: Enables LLMs to retain context across interactions.
 
 ---
 
-## Q31. Explain LangGraph and how it enhances agentic workflows.
+### Q31. Explain LangGraph and how it enhances agentic workflows.
+
+**A:**
+
 LangGraph is a framework built on top of LangChain that provides a graph-based approach to building and managing LLM-powered agentic workflows. It allows developers to design AI agents as interconnected nodes in a directed graph where each node represents a step, tool or decision process in the agent’s reasoning flow.
 
 How It Enhances Agentic Workflows:
@@ -582,7 +645,10 @@ Visual Workflow Representation: Offers a clear, visual structure of the agent�
 
 ---
 
-## Q32. What is LlamaIndex and how does it integrate with external data sources?
+### Q32. What is LlamaIndex and how does it integrate with external data sources?
+
+**A:**
+
 LlamaIndex (formerly known as GPT Index) is a framework designed to connect large language models (LLMs) with external data sources in a structured and efficient way. It provides tools to ingest, index and retrieve information from various data formats so that LLMs can access and reason over private or domain-specific knowledge.
 
 Integration with External Data Sources:
@@ -594,7 +660,10 @@ Composability: Supports creating custom query engines, retrievers and indexes t
 
 ---
 
-## Q33. What are Multimodal Agents and give examples of their applications.
+### Q33. What are Multimodal Agents and give examples of their applications.
+
+**A:**
+
 Multimodal Agents are AI systems capable of processing, understanding and generating content across multiple data modalities such as text, images, audio and video. Unlike traditional language models that handle only text, multimodal agents can interpret and combine information from different input types to perform complex reasoning and interaction tasks.
 
 Applications:
@@ -608,7 +677,10 @@ Document Understanding: Extract information from PDFs, charts or scanned docume
 
 ---
 
-## Q34. Explain RAG (Retrieval-Augmented Generation) architecture in detail.
+### Q34. Explain RAG (Retrieval-Augmented Generation) architecture in detail.
+
+**A:**
+
 RAG (Retrieval-Augmented Generation) is an architecture that combines retrieval-based and generation-based approaches to improve the accuracy, factuality and context-awareness of large language models (LLMs). Instead of relying solely on pre-trained knowledge, RAG retrieves relevant information from an external knowledge base and uses it as context for generating responses.
 Key Components:
 LLM (Generator): Produces coherent and context-aware responses.
@@ -636,7 +708,10 @@ Responses can be refined or validated using additional models (e.g., for summari
 
 ---
 
-## Q35. Compare Closed-book models vs. RAG models.
+### Q35. Compare Closed-book models vs. RAG models.
+
+**A:**
+
 Aspect
 Closed-Book Models
 RAG (Retrieval-Augmented Generation) Models
@@ -667,7 +742,10 @@ Enterprise chatbots, knowledge-based QA systems and domain-specific assistants.
 
 ---
 
-## Q36. What is the role of Vector Stores in a RAG pipeline?
+### Q36. What is the role of Vector Stores in a RAG pipeline?
+
+**A:**
+
 Vector Stores are specialized databases designed to store and retrieve high-dimensional embeddings (vectors) efficiently. In a RAG (Retrieval-Augmented Generation) pipeline, vector stores play a crucial role in retrieving relevant context from large external datasets to enhance the language model’s responses.
 Role in a RAG Pipeline:
 Storage of Embeddings: Store vector representations of documents, text chunks or other data sources generated by an embedding model.
@@ -678,7 +756,10 @@ Filtering and Metadata: Support filtering by metadata (e.g., date, category) to
 
 ---
 
-## Q37. What is Prompt Engineering and why is it important?
+### Q37. What is Prompt Engineering and why is it important?
+
+**A:**
+
 Prompt Engineering is the practice of designing and refining input prompts for large language models (LLMs) to guide them toward producing accurate, relevant and context-aware outputs. It involves carefully crafting the wording, structure and instructions in the prompt to achieve the desired response from the model.
 Techniques include zero-shot prompts, few-shot prompts, chain-of-thought prompts and instruction-based prompts.
 A core skill for developers, AI researchers and prompt engineers working with LLMs.
@@ -693,7 +774,10 @@ Cost and Resource Efficiency: Reduces the need for extensive fine-tuning by usi
 
 ---
 
-## Q38. Explain different types of prompting.
+### Q38. Explain different types of prompting.
+
+**A:**
+
 Prompting refers to the way input instructions or examples are provided to a large language model (LLM) to guide its output. Different prompting strategies influence how the model interprets the task and generates responses.
 
 Types of Prompting:
@@ -715,7 +799,10 @@ Use Case: Improves accuracy in reasoning tasks where the model may produce vari
 
 ---
 
-## Q39. What is LLM Injection (Prompt Injection) and how can it be prevented?
+### Q39. What is LLM Injection (Prompt Injection) and how can it be prevented?
+
+**A:**
+
 LLM Injection (Prompt Injection) is a security vulnerability where malicious users manipulate the input prompt to make a large language model (LLM) behave unexpectedly, reveal sensitive information or bypass restrictions. Essentially, it’s an attack that “injects” instructions into the prompt to override the intended behavior of the model.
 
 Working of Prompt Injection:
@@ -737,7 +824,10 @@ Monitoring and Logging: Continuously monitor interactions for anomalies or unex
 
 ---
 
-## Q40. What are Guardrails in LLMs and why are they important?
+### Q40. What are Guardrails in LLMs and why are they important?
+
+**A:**
+
 Guardrails in LLMs are systematic safety, ethical and behavioral constraints applied to large language models to ensure that their outputs remain aligned with human values organizational policies and societal norms. They act as protective boundaries that guide the model’s responses, preventing harmful, biased or unintended behavior. Guardrails are especially important in applications where LLMs interact with users, access sensitive information or perform decision-making tasks.
 
 Importance:
@@ -758,7 +848,10 @@ Helps organizations meet AI safety, privacy and ethical compliance standards.
 
 ---
 
-## Q41. What is Hallucination in LLMs and how can it be mitigated?
+### Q41. What is Hallucination in LLMs and how can it be mitigated?
+
+**A:**
+
 Hallucination in LLMs refers to instances where a large language model generates information that is false, fabricated or not supported by the input data or external knowledge. Even if the output appears fluent and confident, it may contain inaccuracies, made-up facts or unsupported claims which can reduce trust and reliability in AI systems.
 
 Causes of Hallucination:
@@ -776,7 +869,10 @@ Post-Processing and Filtering: Apply automated filters to detect contradictions
 
 ---
 
-## Q42. What is Knowledge in LLMs and how can we update or augment it?
+### Q42. What is Knowledge in LLMs and how can we update or augment it?
+
+**A:**
+
 Knowledge in LLMs refers to the information, facts, patterns and relationships that a large language model has acquired during pre-training on large datasets. This knowledge is stored in the model’s parameters and allows it to generate responses, answer questions and reason about various topics. However, this knowledge is static unless updated or augmented, meaning the model may not be aware of recent events, new data or domain-specific information.
 
 Ways to Update or Augment Knowledge in LLMs:
@@ -799,7 +895,10 @@ Examples: Wikipedia APIs, financial databases or internal enterprise knowledge b
 
 ---
 
-## Q43. What is LLM Evaluation and why is it necessary?
+### Q43. What is LLM Evaluation and why is it necessary?
+
+**A:**
+
 LLM Evaluation is the process of assessing the performance, accuracy, reliability and safety of a large language model (LLM). It involves testing the model on specific tasks or datasets to measure how well it meets desired criteria such as factual correctness, coherence, reasoning ability and ethical alignment. Evaluation ensures that the model behaves as expected before deployment in real-world applications.
 
 Importance:
@@ -820,7 +919,10 @@ Enables iterative model optimization and alignment with user needs.
 
 ---
 
-## Q44. What are different types of LLM evaluation techniques?
+### Q44. What are different types of LLM evaluation techniques?
+
+**A:**
+
 LLM Evaluation Techniques are methods used to assess the performance, accuracy, reasoning and safety of large language models. Evaluation can be performed using human judgment, automated metrics or standardized benchmark datasets, depending on the task and the level of rigor required.
 
 Types of LLM Evaluation Techniques:
@@ -848,7 +950,10 @@ TruthfulQA: Hallucination and factuality testing.
 
 ---
 
-## Q45. Explain BLEU (Bilingual Evaluation Understudy) and where it is used.
+### Q45. Explain BLEU (Bilingual Evaluation Understudy) and where it is used.
+
+**A:**
+
 BLEU (Bilingual Evaluation Understudy) is an automatic metric for evaluating the quality of generated text by comparing it to one or more reference texts. It measures how many n-grams in the generated output match the reference, providing a score that reflects fluency and similarity to human-written text.
 How BLEU Works:
 Counts n-gram overlaps (unigrams, bigrams, trigrams, etc.) between generated text and reference text.
@@ -862,7 +967,10 @@ Benchmarking LLMs: Used to compare different models or fine-tuning methods in N
 
 ---
 
-## Q46. Explain FID (Fréchet Inception Distance) and how it measures generative quality. Also compare it with BLEU.
+### Q46. Explain FID (Fréchet Inception Distance) and how it measures generative quality. Also compare it with BLEU.
+
+**A:**
+
 FID (Fréchet Inception Distance) is a metric used to evaluate the quality of generated images by comparing the distribution of generated images with that of real images. It measures how similar the generated images are to real ones in terms of visual features and statistics, providing an estimate of realism and diversity.
 How FID Works:
 1. Feature Extraction: Images (real and generated) are passed through a pre-trained Inception network to extract feature embeddings.
@@ -900,7 +1008,10 @@ Automatic metric for visual generative quality.
 
 ---
 
-## Q47. What are the different types of LLMs?
+### Q47. What are the different types of LLMs?
+
+**A:**
+
 LLMs (Large Language Models) are AI models trained on massive datasets to understand, generate and reason over human-like text. They vary in accessibility, licensing and customization options. Broadly, LLMs are categorized as proprietary or open-source, based on whether the model weights and training details are publicly accessible.
 
 Types of LLMs:
@@ -918,7 +1029,10 @@ Mixtral: Multimodal open-source model designed for reasoning and instruction-fo
 Zephyr: Lightweight, efficient LLM designed for experimentation and integration into smaller systems.
 ---
 
-## Q48. What are agentic LLMs and how do they differ from simple chat-based LLMs?
+### Q48. What are agentic LLMs and how do they differ from simple chat-based LLMs?
+
+**A:**
+
 Agentic LLMs are large language models that act as autonomous agents, capable of planning, reasoning, taking multi-step actions and interacting with external tools or environments to accomplish goals. Unlike simple chat-based LLMs that only respond to queries, agentic LLMs can make decisions, retrieve information, execute tasks and maintain context over time.
 Aspect
 Chat-Based LLMs
@@ -947,7 +1061,10 @@ More complex; requires orchestration, tool integration and memory management.
 
 ---
 
-## Q49. How do frameworks like LangChain, LangGraph and LlamaIndex interconnect in an end-to-end GenAI project?
+### Q49. How do frameworks like LangChain, LangGraph and LlamaIndex interconnect in an end-to-end GenAI project?
+
+**A:**
+
 In an end-to-end GenAI project, LangChain, LangGraph and LlamaIndex are frameworks that connect LLMs with data, workflows and tools to build intelligent, agentic systems. LlamaIndex handles data ingestion and indexing, LangChain manages LLM orchestration and tool integration and LangGraph provides visual workflow management and execution of agentic reasoning. Together, they create a complete pipeline from raw data to actionable outputs.
 Roles and Interconnection:
 LlamaIndex (Data Integration & Indexing): LlamaIndex collects, structures and indexes external data like documents, databases or APIs. It converts raw data into retrievable embeddings and provides a searchable knowledge base for LLMs. This indexed data is then supplied to LangChain or LangGraph for retrieval-augmented generation (RAG).
@@ -961,7 +1078,10 @@ The LLM produces contextually relevant and actionable results which can be store
 
 ---
 
-## Q50. What are multimodal LLMs and how do they process text, image and audio simultaneously?
+### Q50. What are multimodal LLMs and how do they process text, image and audio simultaneously?
+
+**A:**
+
 Multimodal LLMs (Large Language Models) are models designed to understand and generate information across multiple data types—such as text, images, audio or video—within a single unified architecture. Unlike traditional text-only LLMs, multimodal models can interpret and reason over different kinds of inputs together, enabling richer understanding and context-aware responses.
 
 1. Input Encoding: Each modality (text, image, audio) is first converted into a numerical embedding.
