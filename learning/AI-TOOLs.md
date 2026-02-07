@@ -16,7 +16,7 @@
 | Images | Gemini Nano Banana, ChatGPT Images, Midjourney, Adobe Firefly, Canva(Thumbnail) | Image generation, marketing creatives, brand-safe visuals |
 | Project Management (Notes & Knowledge) | Google NotebookLM, Google Lab Illuminate, Notion AI, Miro (Design Thinking) | Document understanding, internal knowledge, research synthesis |
 | Coding Model | Claude Code (Writing Code), OpenAI Codex (Plan) | Plan & code
-| Coding | Google Anitgravity, Cursor, Claude Code, GitHub Copilot, Windsurf, OpenAI Codex, Trae, Zed | Plan, design, code, refactor, test, and analyze code
+| Coding Assistant | Google Anitgravity, Cursor, Claude Code, GitHub Copilot, Windsurf, OpenAI Codex, Trae, Zed | Plan, design, code, refactor, test, and analyze code
 | App Builder | Lovable, Emergent, Bubble, Replit (AI) | Build full-stack apps fast, manage and deliver software using AI that understands your roadmap, codebase, and priorities |
 | Automation | Zapier AI, n8n | Workflow automation, system integration |
 | Research | Gemini, ChatGPT Pulse, Grok| Reserach work end to end |
