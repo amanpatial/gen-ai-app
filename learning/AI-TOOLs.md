@@ -12,7 +12,7 @@
 |--------|----------------------------|------------------|
 | Presentations | Gamma (Non-tech & story telling ppt), GenSpark (techincal ppt), Manus AI, PowerPoint Copilot, Canva Magic Slides | Prompt-to-deck, leadership decks, client presentations |
 | Meetings | Loom, Fireflies, Otter | Async updates, meeting summaries, action tracking |
-| Mockups & Design | Figma AI, Framer AI | UI/UX mockups, prototypes, landing pages |
+| Mockups & Design | Figma AI, Framer AI, Miro (Design Thinking) | UI/UX mockups, prototypes, landing pages |
 | Images | Gemini Nano Banana, ChatGPT Images, Midjourney, Adobe Firefly, Canva(Thumbnail) | Image generation, marketing creatives, brand-safe visuals |
 | Project Management (Notes & Knowledge) | Google NotebookLM, Google Lab Illuminate, Notion AI, Miro (Design Thinking) | Document understanding, internal knowledge, research synthesis |
 | Coding Model | Claude Code (Writing Code), OpenAI Codex (Plan) | Plan & code
