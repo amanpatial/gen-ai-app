@@ -1,6 +1,6 @@
 # Updated GenAI Interview Questions
 
-## Question on Artificial Neural Network(ANN):
+## Questions on Artificial Neural Network (ANN)
 
 - What is an Artificial Neural Network, and how does it work?
 - What are activation functions, tell me the type of the activation functions and why are they used in neural networks?
