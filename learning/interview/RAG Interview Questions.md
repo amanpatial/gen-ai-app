@@ -173,13 +173,15 @@ Additionally, the model needs to be able to adapt to new information in real-tim
 
 ### Q22. What are some advanced RAG systems?
 
-**A:** There are many advanced RAG systems.
+**A:**
 
-One such system is the **Adaptive RAG**, where the system not only retrieves information but also adjusts its approach in real-time based on the query. The adaptive RAG can decide to perform no retrieval, single-shot RAG, or iterative RAG. This dynamic behavior makes the RAG system more robust and relevant to the user's request.
-Another advanced RAG system is Agentic RAG, which introduces retrieval agents—tools that decide whether to pull information from a source. By giving a language model this capability, it can determine on its own if it needs extra information, making the process smoother.
-Corrective RAG (CRAG) is also becoming popular. In this approach, the system reviews the documents it retrieves, checking for relevancy. Only documents that are classified as relevant would be fed to the generator. This self-correction step helps ensure accurate relevant information is used. To learn more, you can read this tutorial on Corrective RAG (CRAG) Implementation With LangGraph.
-Self-RAG takes this a step further by evaluating not just the retrieved documents but also the final responses generated, making sure both are aligned with the user’s query. This leads to more reliable and consistent results.
+- **Adaptive RAG:** Adjusts approach in real time based on the query (no retrieval, single-shot RAG, or iterative RAG). Makes the system more robust and relevant.
+- **Agentic RAG:** Uses retrieval agents—tools that decide when to pull information. The LLM can determine on its own if it needs extra information.
+- **Corrective RAG (CRAG):** Reviews retrieved documents for relevancy; only documents classified as relevant are fed to the generator. Self-correction step for accurate information.
+- **Self-RAG:** Evaluates both retrieved documents and final responses so both align with the user's query → more reliable and consistent results.
+
 ---
+
 
 ### Q23. How can you reduce latency in a real-time RAG system without sacrificing accuracy?
 
